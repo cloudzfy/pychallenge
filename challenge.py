@@ -36,3 +36,55 @@ print findall('[^A-Z][A-Z]{3}[a-z][A-Z]{3}[^A-Z]', s)
 # Problem 4 (http://www.pythonchallenge.com/pc/def/linkedlist.php)
 
 import urllib
+nothing = '12345'
+for i in range (0, 400):
+	file = urllib.urlopen('http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing=' + nothing)
+	data = file.readline()
+	nothing = search('[0-9]+', data).group()
+	print nothing
+
+nothing = '8022'
+for i in range (0, 400):
+	file = urllib.urlopen('http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing=' + nothing)
+	data = file.readline()
+	nothing = search('[0-9]+', data).group()
+	print nothing
+
+nothing = '63579'
+for i in range (0, 400):
+	file = urllib.urlopen('http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing=' + nothing)
+	data = file.readline()
+	nothing = search('[0-9]+', data).group()
+	print nothing
+
+# Problem 5 (http://www.pythonchallenge.com/pc/def/peak.html)
+
+file = open('banner.p','r')
+data = pickle.load(file)
+file.close()
+for line in data:
+	print ''.join(x[0]*x[1] for x in line)
+
+# Problem 6 (http://www.pythonchallenge.com/pc/def/channel.html)
+
+nothing = '90052'
+for i in range(0, 1000):
+	file = open('channel/' + nothing + '.txt')
+	data = file.readline()
+	nothing = search('[0-9]+', data).group()
+	print nothing
+
+import zipfile
+nothing = '90052'
+file = zipfile.ZipFile('channel.zip','r')
+ans = ''
+for i in range(0, 1000):
+	file = open('channel/' + nothing + '.txt')
+	ans += zip.getinfo(nothing + '.txt').comment
+	data = file.readline()
+	file.close()
+	nothing = search('[0-9]+', data).group()
+print ans
+
+# Problem 7 (http://www.pythonchallenge.com/pc/def/oxygen.html)
+
