@@ -59,7 +59,7 @@ for i in range (0, 400):
 
 # Problem 5 (http://www.pythonchallenge.com/pc/def/peak.html)
 
-file = open('banner.p','r')
+file = open('banner.txt','r')
 data = pickle.load(file)
 file.close()
 for line in data:
