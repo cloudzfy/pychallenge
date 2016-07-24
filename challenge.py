@@ -150,4 +150,35 @@ second = [156,141,165,135,169,131,176,130,187,134,191,140,191,146,186,150,179,15
 77,155,81,148,87,140,96,138,105,141,110,136,111,126,113,129,118,117,128,114,137,115,146,114,155,115,
 158,121,157,128,156,134,157,136,156,136]
 
-im = Image.open('good.jpg')
+im = Image.new('RGB', (500, 500))
+total = first + second
+for i in range(0, len(total), 2):
+	im.putpixel((total[i], total[i + 1]), (255, 255, 255))
+im.show()
+
+# Level 10 (http://www.pythonchallenge.com/pc/return/bull.html)
+
+from itertools import groupby
+s = '1'
+for i in range(0, 30):
+	s = ''.join(str(len(list(v))) + k for k, v in groupby(s))
+print len(s)
+
+# Level 11 (http://www.pythonchallenge.com/pc/return/5808.html)
+
+import Image
+im = Image.open('cave.jpg')
+odd = Image.new(im.mode, im.size)
+even = Image.new(im.mode, im.size)
+for x in range(0, im.size[0]):
+	for y in range(0, im.size[1]):
+		if x % 2 == 0 and y % 2 == 0:
+			even.putpixel((x / 2, y / 2), im.getpixel((x, y)))
+		elif x % 2 == 0 and y % 2 == 1:
+			odd.putpixel((x / 2, (y - 1) / 2), im.getpixel((x, y)))
+		elif x % 2 == 1 and y % 2 == 0:
+			odd.putpixel(((x - 1) / 2, y / 2), im.getpixel((x, y)))
+		else:
+			odd.putpixel(((x - 1) / 2, (y - 1) / 2), im.getpixel((x, y)))
+odd.show()
+even.show()
