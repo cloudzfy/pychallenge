@@ -168,17 +168,61 @@ print len(s)
 
 import Image
 im = Image.open('cave.jpg')
-odd = Image.new(im.mode, im.size)
-even = Image.new(im.mode, im.size)
+oddodd = Image.new(im.mode, im.size)
+eveneven = Image.new(im.mode, im.size)
+oddeven = Image.new(im.mode, im.size)
+evenodd = Image.new(im.mode, im.size)
 for x in range(0, im.size[0]):
 	for y in range(0, im.size[1]):
 		if x % 2 == 0 and y % 2 == 0:
-			even.putpixel((x / 2, y / 2), im.getpixel((x, y)))
+			eveneven.putpixel((x / 2, y / 2), im.getpixel((x, y)))
 		elif x % 2 == 0 and y % 2 == 1:
-			odd.putpixel((x / 2, (y - 1) / 2), im.getpixel((x, y)))
+			evenodd.putpixel((x / 2, (y - 1) / 2), im.getpixel((x, y)))
 		elif x % 2 == 1 and y % 2 == 0:
-			odd.putpixel(((x - 1) / 2, y / 2), im.getpixel((x, y)))
+			oddeven.putpixel(((x - 1) / 2, y / 2), im.getpixel((x, y)))
 		else:
-			odd.putpixel(((x - 1) / 2, (y - 1) / 2), im.getpixel((x, y)))
-odd.show()
-even.show()
+			oddodd.putpixel(((x - 1) / 2, (y - 1) / 2), im.getpixel((x, y)))
+oddodd.show()
+eveneven.show()
+oddeven.show()
+evenodd.show()
+
+# Level 12 (http://www.pythonchallenge.com/pc/return/evil.html)
+
+file = open('evil2.gfx')
+data = file.read()
+file.close()
+for i in range(0, 5):
+	file = open('evil2-%d.jpg' % i, 'w')
+	file.write(data[i::5])
+	file.close()
+
+# Level 13 (http://www.pythonchallenge.com/pc/return/disproportional.html)
+
+import xmlrpclib
+server = xmlrpclib.ServerProxy('http://www.pythonchallenge.com/pc/phonebook.php')
+print server.system.listMethods()
+print server.system.methodHelp('phone')
+print server.phone('Bert')
+
+# Level 14 (http://www.pythonchallenge.com/pc/return/italy.html)
+
+import Image
+im = Image.file('wire.png')
+ans = Image.new(im.mode, (100, 100))
+step = [[1, 0], [0, 1], [-1, 0], [0, -1]]
+maxLen = [[i, i - 1, i - 1, i - 2] for i in range(100, 1, -2)]
+maxLen = reduce(lambda x, y: x + y, maxLen)
+pos = [-1, 0]
+s = 0
+count = 0
+for l  in maxLen:
+	for i in range(l):
+		pos = tuple(map(lambda x, y: x + y, pos, step[s]))
+		ans.putpixel(pos, im.getpixel((count, 0)))
+		count += 1
+	s = (s + 1) % 4
+ans.show()
+
+# Level 15 (http://www.pythonchallenge.com/pc/return/uzi.html)
+
