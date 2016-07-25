@@ -248,11 +248,45 @@ for y in range(im.size[1]):
 # Level 17 (http://www.pythonchallenge.com/pc/return/romance.html)
 
 import urllib
+import urllib2
+import cookielib
 from re import search
-busynothing = '72758'
-for i in range (0, 400):
-	file = urllib.urlopen('http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing=' + busynothing)
-	data = file.readline()
-	busynothing = search('[0-9]+', data).group()
-	print busynothing
+import bz2
+
+cookiejar = cookielib.CookieJar()
+handler = urllib2.HTTPCookieProcessor(cookiejar)
+opener = urllib2.build_opener(handler)
+
+url = 'http://www.pythonchallenge.com/pc/def/linkedlist.php?busynothing='
+val = '44827'
+info = 'B'
+while True:
+	data = opener.open(url + val).read()
+	for c in cookiejar:
+		if c.name == 'info':
+			info += c.value
+	print data
+	print info
+	try:
+		val = search('[0-9]+', data).group()
+	except:
+		break
+info = urllib.unquote_plus(info)
+print bz2.decompress(info)
+
+import xmlrpclib
+server = xmlrpclib.ServerProxy('http://www.pythonchallenge.com/pc/phonebook.php')
+print server.system.listMethods()
+print server.system.methodHelp('phone')
+print server.phone('Leopold')
+
+url = 'http://www.pythonchallenge.com/pc/stuff/violin.php'
+cookie = cookielib.Cookie(version=0, name='info', value='the+flowers+are+on+their+way', port=None, port_specified=False, domain='.pythonchallenge.com', domain_specified=True, domain_initial_dot=True, path='/', path_specified=True, secure=False, expires=1470023979, discard=False, comment=None, comment_url=None, rest={}, rfc2109=False)
+cookiejar = cookielib.CookieJar()
+cookiejar.set_cookie(cookie)
+handler = urllib2.HTTPCookieProcessor(cookiejar)
+opener = urllib2.build_opener(handler)
+data = opener.open(url).read()
+
+# Level 18 (http://www.pythonchallenge.com/pc/return/balloons.html)
 
