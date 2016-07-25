@@ -86,6 +86,7 @@ for i in range(0, 1000):
 	data = file.readline()
 	file.close()
 	nothing = search('[0-9]+', data).group()
+
 print ans
 
 # Level 7 (http://www.pythonchallenge.com/pc/def/oxygen.html)
@@ -98,21 +99,25 @@ for i in range(0, im.size[1]):
 	if p[0] == p[1] == p[2]:
 		y = i
 		break
+
 for i in range(0, im.size[0]):
 	p = im.getpixel((i, y))
 	if not p[0] == p[1] == p[2]:
 		x = i
 		break
+
 ans = ''
 for i in range(0, x, 7):
 	p = im.getpixel((i, y))
 	ans += chr(p[0])
+
 print ans
 
 data = [105, 110, 116, 101, 103, 114, 105, 116, 121]
 ans = ''
 for c in data:
 	ans += chr(c)
+
 print ans
 
 # Level 8 (http://www.pythonchallenge.com/pc/def/integrity.html)
@@ -156,6 +161,7 @@ im = Image.new('RGB', (500, 500))
 total = first + second
 for i in range(0, len(total), 2):
 	im.putpixel((total[i], total[i + 1]), (255, 255, 255))
+
 im.show()
 
 # Level 10 (http://www.pythonchallenge.com/pc/return/bull.html)
@@ -164,6 +170,7 @@ from itertools import groupby
 s = '1'
 for i in range(0, 30):
 	s = ''.join(str(len(list(v))) + k for k, v in groupby(s))
+
 print len(s)
 
 # Level 11 (http://www.pythonchallenge.com/pc/return/5808.html)
@@ -184,6 +191,7 @@ for x in range(0, im.size[0]):
 			oddeven.putpixel(((x - 1) / 2, y / 2), im.getpixel((x, y)))
 		else:
 			oddodd.putpixel(((x - 1) / 2, (y - 1) / 2), im.getpixel((x, y)))
+
 oddodd.show()
 eveneven.show()
 oddeven.show()
@@ -224,6 +232,7 @@ for l  in maxLen:
 		ans.putpixel(pos, im.getpixel((count, 0)))
 		count += 1
 	s = (s + 1) % 4
+
 ans.show()
 
 # Level 15 (http://www.pythonchallenge.com/pc/return/uzi.html)
@@ -271,6 +280,7 @@ while True:
 		val = search('[0-9]+', data).group()
 	except:
 		break
+
 info = urllib.unquote_plus(info)
 print bz2.decompress(info)
 
@@ -290,3 +300,35 @@ data = opener.open(url).read()
 
 # Level 18 (http://www.pythonchallenge.com/pc/return/balloons.html)
 
+from difflib import Differ
+from binascii import unhexlify
+file = open('deltas', 'r')
+left = []
+right = []
+for line in file.readlines():
+	left.append(line[0:53])
+	right.append(line[56:109])
+
+file.close()
+d = Differ()
+result = list(d.compare(left, right))
+pic1 = ''
+pic2 = ''
+pic3 = ''
+for line in result:
+	if line[0] == ' ':
+		pic1 += line[1:].replace(' ', '').replace('\n', '')
+	elif line[0] == '+':
+		pic2 += line[1:].replace(' ', '').replace('\n', '')
+	elif line[0] == '-':
+		pic3 += line[1:].replace(' ', '').replace('\n', '')
+
+f1 = open('pic1.png', 'wb')
+f1.write(unhexlify(pic1))
+f1.close()
+f2 = open('pic2.png', 'wb')
+f2.write(unhexlify(pic2))
+f2.close()
+f3 = open('pic3.png', 'wb')
+f3.write(unhexlify(pic3))
+f3.close()
