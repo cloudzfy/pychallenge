@@ -6,84 +6,84 @@ Copyright (C) 2016 Cloudzfy. All Rights Reserved.
 
 * **Level 0** [warming up](http://www.pythonchallenge.com/pc/def/0.html)
   
-  Just do the calculation 2<sup>38</sup> and put it in the URL address.
+  * Just do the calculation 2<sup>38</sup> and put it in the URL address.
 
 * **Level 1** [What about making trans?](http://www.pythonchallenge.com/pc/def/map.html)
   
-  Utilize `maketrans` and `translate` to map all the letters.
+  * Utilize `maketrans` and `translate` to map all the letters.
 
 * **Level 2** [ocr](http://www.pythonchallenge.com/pc/def/ocr.html)
 
-  Check the comments in HTML source code, and find the rare characters.
+  * Check the comments in HTML source code, and find the rare characters.
 
 * **Level 3** [re](http://www.pythonchallenge.com/pc/def/equality.html)
 
-  Check the comments in HTML source code, and find the substring with XXXxXXX. Use `re.findall`.
+  * Check the comments in HTML source code, and find the substring with XXXxXXX. Use `re.findall`.
 
 * **Level 4** [follow the chain](http://www.pythonchallenge.com/pc/def/linkedlist.php)
 
-  Click the image and will find the linkedlist. Use `urllib`.
+  * Click the image and will find the linkedlist. Use `urllib`.
 
 * **Level 5** [peak hell](http://www.pythonchallenge.com/pc/def/peak.html)
 
-  "Peak hell" sounds like `pickle`. Download the data from `<peakhell>` label and use `pickle` to extract information.
+  * "Peak hell" sounds like `pickle`. Download the data from `<peakhell>` label and use `pickle` to extract information.
   
-  Trick: When printing the data from pickle, you may find the correlation between each character and its amount.
+  * Trick: When printing the data from pickle, you may find the correlation between each character and its amount.
 
 * **Level 6** [now there are pairs](http://www.pythonchallenge.com/pc/def/channel.html)
 
-  The "zip" indicates there may be a ZIP file, check `channel.zip` and download. You may find a linkedlist based on text file. Check `readme.txt`, You may use `zip.getinfo().comment` to retrieve comments of each text file in the ZIP.
+  * The "zip" indicates there may be a ZIP file, check `channel.zip` and download. You may find a linkedlist based on text file. Check `readme.txt`, You may use `zip.getinfo().comment` to retrieve comments of each text file in the ZIP.
   
-  Trick: it's in the air, look at the letters.
+  * Trick: it's in the air, look at the letters.
 
 * **Level 7** [smarty](http://www.pythonchallenge.com/pc/def/oxygen.html)
 
-  Check the gray bar in the image file, using `Image`. Note for gray color, R == G == B. Transfer the color into ASCII.
+  * Check the gray bar in the image file, using `Image`. Note for gray color, R == G == B. Transfer the color into ASCII.
 
 * **Level 8** [working hard?](http://www.pythonchallenge.com/pc/def/integrity.html)
 
-  The bee has link with username and password, which can be found in the HTML comment. Use `bz2` to decompress.
+  * The bee has link with username and password, which can be found in the HTML comment. Use `bz2` to decompress.
 
 * **Level 9** [connect dots](http://www.pythonchallenge.com/pc/return/good.html)
 
-  To connect dots, you may check the HTML comments for the dots, and connect one by one.
+  * To connect dots, you may check the HTML comments for the dots, and connect one by one.
   
-  Trick: Hmm, it's a male.
+  * Trick: Hmm, it's a male.
 
 * **Level 10** [what are you looking at?](http://www.pythonchallenge.com/pc/return/bull.html)
 
-  Check the HTML comments for `len(a[30])`, you may find it is a count-and-say.
+  * Check the HTML comments for `len(a[30])`, you may find it is a count-and-say.
 
 * **Level 11** [odd even](http://www.pythonchallenge.com/pc/return/5808.html)
 
-  The image provided could be sliced by odd and even. If you cannot find the clue, adjust the brightness of your screen.
+  * The image provided could be sliced by odd and even. If you cannot find the clue, adjust the brightness of your screen.
 
 * **Level 12** [dealing evil](http://www.pythonchallenge.com/pc/return/evil.html)
 
-  Clue is hided in the image. Since it is `evil1.jpg`, how about `evil2.jpg`, `evil3.jpg`, or even `evil4.jpg`. Not all the image file are image format. Do the file partition just like dealing with the cards.
+  * Clue is hided in the image. Since it is `evil1.jpg`, how about `evil2.jpg`, `evil3.jpg`, or even `evil4.jpg`. Not all the image file are image format. Do the file partition just like dealing with the cards.
   
-  Trick: Bert is evil! go back!
+  * Trick: Bert is evil! go back!
 
 * **Level 13** [call him](http://www.pythonchallenge.com/pc/return/disproportional.html)
 
-  You may find the number `5` is clickable. Use `xmlrpclib` to call him.
+  * You may find the number `5` is clickable. Use `xmlrpclib` to call him.
 
 * **Level 14** [walk around](http://www.pythonchallenge.com/pc/return/italy.html)
 
-  Rearrange the image file just like the bread.
+  * Rearrange the image file just like the bread.
   
-  Trick: its name is uzi.
+  * Trick: its name is uzi.
 
 * **Level 15** [uzi](http://www.pythonchallenge.com/pc/return/uzi.html)
 
-  Use `calendar.isleap` and `datetime.date`, you may find it easy to get the year. Then check the history.
+  * Use `calendar.isleap` and `datetime.date`, you may find it easy to get the year. Then check the history.
 
 * **Level 16** [let me get this straight](http://www.pythonchallenge.com/pc/return/mozart.html)
 
-  Get the image straight as the hint said. Use `a[1:]`.
+  * Get the image straight as the hint said. Use `a[1:]`.
 
 * **Level 17** [eat?](http://www.pythonchallenge.com/pc/return/romance.html)
 
-  You may find the image at the corner fimiliar. Check the browser cookies for hint.
+  * You may find the image at the corner fimiliar. Check the browser cookies for hint.
   
-  Trick: 1. yummy! chocolate chips. 2. do you want to eat or to play? 3. then go back and play.
+  * Trick: 1. yummy! chocolate chips. 2. do you want to eat or to play? 3. then go back and play.
