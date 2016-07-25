@@ -34,7 +34,7 @@ Copyright (C) 2016 Cloudzfy. All Rights Reserved.
 
   * The "zip" indicates there may be a ZIP file, check `channel.zip` and download. You may find a linkedlist based on text file. Check `readme.txt`, You may use `zip.getinfo().comment` to retrieve comments of each text file in the ZIP.
   
-  * Trick: it's in the air, look at the letters.
+  * Hint: it's in the air, look at the letters.
 
 * **Level 7** [smarty](http://www.pythonchallenge.com/pc/def/oxygen.html)
 
@@ -48,7 +48,7 @@ Copyright (C) 2016 Cloudzfy. All Rights Reserved.
 
   * To connect dots, you may check the HTML comments for the dots, and connect one by one.
   
-  * Trick: Hmm, it's a male.
+  * Hint: Hmm, it's a male.
 
 * **Level 10** [what are you looking at?](http://www.pythonchallenge.com/pc/return/bull.html)
 
@@ -62,7 +62,7 @@ Copyright (C) 2016 Cloudzfy. All Rights Reserved.
 
   * Clue is hided in the image. Since it is `evil1.jpg`, how about `evil2.jpg`, `evil3.jpg`, or even `evil4.jpg`. Not all the image file are image format. Do the file partition just like dealing with the cards.
   
-  * Trick: Bert is evil! go back!
+  * Hint: Bert is evil! go back!
 
 * **Level 13** [call him](http://www.pythonchallenge.com/pc/return/disproportional.html)
 
@@ -72,7 +72,7 @@ Copyright (C) 2016 Cloudzfy. All Rights Reserved.
 
   * Rearrange the image file just like the bread.
   
-  * Trick: its name is uzi.
+  * Hint: its name is uzi.
 
 * **Level 15** [uzi](http://www.pythonchallenge.com/pc/return/uzi.html)
 
@@ -85,14 +85,14 @@ Copyright (C) 2016 Cloudzfy. All Rights Reserved.
 * **Level 17** [eat?](http://www.pythonchallenge.com/pc/return/romance.html)
 
   * You may find the image at the corner fimiliar. Check the browser cookies for hint. Use `cookielib.CookieJar()` to retrieve cookie values.
-  * Trick:
+  * Hint:
     * yummy! chocolate chips. 
     * do you want to eat or to play?
     * then go back and play.
     * If you came here from level 4 - go back! You should follow the obvious chain... and the next busynothing is 44827
   * Use `urllib.unquote_plus()` and `bz2` to unveil the code.
   * Call Leopold using the phone.
-    * Trick: no! i mean yes! but ../stuff/violin.php.
+  * Hint: no! i mean yes! but ../stuff/violin.php.
   * Use `cookielib.Cookie` to create cookie for request.
 
 * **Level 18** [can you tell the difference?](http://www.pythonchallenge.com/pc/return/balloons.html)
