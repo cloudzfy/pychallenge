@@ -27,13 +27,11 @@ Copyright (C) 2016 Cloudzfy. All Rights Reserved.
 * **Level 5** [peak hell](http://www.pythonchallenge.com/pc/def/peak.html)
 
   * "Peak hell" sounds like `pickle`. Download the data from `<peakhell>` label and use `pickle` to extract information.
-  
   * Trick: When printing the data from pickle, you may find the correlation between each character and its amount.
 
 * **Level 6** [now there are pairs](http://www.pythonchallenge.com/pc/def/channel.html)
 
   * The "zip" indicates there may be a ZIP file, check `channel.zip` and download. You may find a linkedlist based on text file. Check `readme.txt`, You may use `zip.getinfo().comment` to retrieve comments of each text file in the ZIP.
-  
   * Hint: it's in the air, look at the letters.
 
 * **Level 7** [smarty](http://www.pythonchallenge.com/pc/def/oxygen.html)
@@ -61,7 +59,6 @@ Copyright (C) 2016 Cloudzfy. All Rights Reserved.
 * **Level 12** [dealing evil](http://www.pythonchallenge.com/pc/return/evil.html)
 
   * Clue is hided in the image. Since it is `evil1.jpg`, how about `evil2.jpg`, `evil3.jpg`, or even `evil4.jpg`. Not all the image file are image format. Do the file partition just like dealing with the cards.
-  
   * Hint: Bert is evil! go back!
 
 * **Level 13** [call him](http://www.pythonchallenge.com/pc/return/disproportional.html)
@@ -71,7 +68,6 @@ Copyright (C) 2016 Cloudzfy. All Rights Reserved.
 * **Level 14** [walk around](http://www.pythonchallenge.com/pc/return/italy.html)
 
   * Rearrange the image file just like the bread.
-  
   * Hint: its name is uzi.
 
 * **Level 15** [uzi](http://www.pythonchallenge.com/pc/return/uzi.html)
@@ -96,3 +92,7 @@ Copyright (C) 2016 Cloudzfy. All Rights Reserved.
   * Use `cookielib.Cookie` to create cookie for request.
 
 * **Level 18** [can you tell the difference?](http://www.pythonchallenge.com/pc/return/balloons.html)
+
+  * First question is easy, `brightness` is the difference.
+  * Check the comment, you may find the file `deltas.gz`, which is a text file, but needed to be compare using `difflib.Differ`. To convert the text back to hex, use `binascii.unhexlify`.
+
