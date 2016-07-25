@@ -4,6 +4,7 @@ pow(2, 38)
 
 # Level 1 (http://www.pythonchallenge.com/pc/def/map.html)
 
+from string import maketrans
 s = "g fmnc wms bgblr rpylqjyrc gr zw fylb. rfyrq ufyr amknsrcpq ypc dmp. bmgle gr gl zw fylb gq glcddgagclr ylb rfyr'q ufw rfgq rcvr gq qm jmle. sqgle qrpgle.kyicrpylq() gq pcamkkclbcb. lmu ynnjw ml rfc spj."
 a = maketrans('', '')[97:123]
 b = list(a)
@@ -35,6 +36,7 @@ print findall('[^A-Z][A-Z]{3}[a-z][A-Z]{3}[^A-Z]', s)
 
 # Level 4 (http://www.pythonchallenge.com/pc/def/linkedlist.php)
 
+from re import search
 import urllib
 nothing = '12345'
 for i in range (0, 400):
@@ -76,7 +78,7 @@ for i in range(0, 1000):
 
 import zipfile
 nothing = '90052'
-file = zipfile.ZipFile('channel.zip','r')
+zip = zipfile.ZipFile('channel.zip','r')
 ans = ''
 for i in range(0, 1000):
 	file = open('channel/' + nothing + '.txt')
@@ -225,4 +227,32 @@ for l  in maxLen:
 ans.show()
 
 # Level 15 (http://www.pythonchallenge.com/pc/return/uzi.html)
+
+from calendar import isleap
+from datetime import date
+for year in range(1006, 1997, 10):
+	d = date(year, 1, 1)
+	if isleap(year) and d.weekday() == 3:
+		print year
+
+# Level 16 (http://www.pythonchallenge.com/pc/return/mozart.html)
+
+import Image
+im = Image.file('mozart.gif')
+for y in range(im.size[1]):
+	col = [im.getpixel((x, y)) for x in range(im.size[0])]
+	idx = col.index(195)
+	col = col[idx:] + col[:idx]
+	[im.putpixel((x, y), col[x]) for x in range(im.size[0])]
+
+# Level 17 (http://www.pythonchallenge.com/pc/return/romance.html)
+
+import urllib
+from re import search
+busynothing = '72758'
+for i in range (0, 400):
+	file = urllib.urlopen('http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing=' + busynothing)
+	data = file.readline()
+	busynothing = search('[0-9]+', data).group()
+	print busynothing
 
