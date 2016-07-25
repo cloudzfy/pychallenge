@@ -84,9 +84,12 @@ Copyright (C) 2016 Cloudzfy. All Rights Reserved.
 
 * **Level 17** [eat?](http://www.pythonchallenge.com/pc/return/romance.html)
 
-  * You may find the image at the corner fimiliar. Check the browser cookies for hint.
+  * You may find the image at the corner fimiliar. Check the browser cookies for hint. Use `cookielib.CookieJar()` to retrieve cookie values.
   * Trick:
     * yummy! chocolate chips. 
     * do you want to eat or to play?
     * then go back and play.
     * If you came here from level 4 - go back! You should follow the obvious chain... and the next busynothing is 44827
+  * Use `urllib.unquote_plus()` and `bz2` to unveil the code.
+  * Call Leopold using the phone.
+    * Trick: no! i mean yes! but ../stuff/violin.php.
