@@ -93,3 +93,6 @@ Copyright (C) 2016 Cloudzfy. All Rights Reserved.
   * Use `urllib.unquote_plus()` and `bz2` to unveil the code.
   * Call Leopold using the phone.
     * Trick: no! i mean yes! but ../stuff/violin.php.
+  * Use `cookielib.Cookie` to create cookie for request.
+
+* **Level 18** [can you tell the difference?](http://www.pythonchallenge.com/pc/return/balloons.html)
