@@ -4,6 +4,8 @@ Copyright (C) 2016 Cloudzfy. All Rights Reserved.
 
 ========================================================
 
+This is a solution for [Python Challenge](http://pythonchallenge.com), a puzzle game website, which in the meantime, is a best place for Python beginner.
+
 * **Level 0** [warming up](http://www.pythonchallenge.com/pc/def/0.html)
   
   * Just do the calculation 2<sup>38</sup> and put it in the URL address.
