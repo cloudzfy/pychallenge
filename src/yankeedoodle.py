@@ -1,5 +1,6 @@
 import urllib
 import Image
+from math import sqrt
 
 src = urllib.urlopen('http://repeat:switch@www.pythonchallenge.com/pc/ring/yankeedoodle.csv').read()
 data = src.replace('\n', '').replace(' ', '').split(',')
