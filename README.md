@@ -12,7 +12,7 @@ This is a solution for [Python Challenge](http://pythonchallenge.com), a puzzle 
 
 * **Level 1** [What about making trans?](http://www.pythonchallenge.com/pc/def/map.html)
   
-  * Utilize `maketrans` and `translate` to map all the letters.
+  * Apply dictionary mapping to the encrypted text.
 
 * **Level 2** [ocr](http://www.pythonchallenge.com/pc/def/ocr.html)
 
@@ -20,21 +20,20 @@ This is a solution for [Python Challenge](http://pythonchallenge.com), a puzzle 
 
 * **Level 3** [re](http://www.pythonchallenge.com/pc/def/equality.html)
 
-  * Check the comments in HTML source code, and find the substring with XXXxXXX. Use `re.findall`.
+  * Check the comments in HTML source code, and find the substring with XXXxXXX.
 
 * **Level 4** [follow the chain](http://www.pythonchallenge.com/pc/def/linkedlist.php)
 
-  * Click the image and will find the linkedlist. Use `urllib`.
+  * There is a link on the image. Use the number as a clue to fine the tail of the linkedlist.
 
 * **Level 5** [peak hell](http://www.pythonchallenge.com/pc/def/peak.html)
 
   * "Peak hell" sounds like `pickle`. Download the data from `<peakhell>` label and use `pickle` to extract information.
-  * Trick: When printing the data from pickle, you may find the correlation between each character and its amount.
+  * Trick: When printing the data from pickle, you may find the correlation between each character and its frequency.
 
 * **Level 6** [now there are pairs](http://www.pythonchallenge.com/pc/def/channel.html)
 
-  * The "zip" indicates there may be a ZIP file, check `channel.zip` and download. You may find a linkedlist based on text file. Check `readme.txt`, You may use `zip.getinfo().comment` to retrieve comments of each text file in the ZIP.
-  * Hint: it's in the air, look at the letters.
+  * Download the ZIP file `channel.zip` with a linkedlist based on the names of text files. Check `readme.txt`, You may use `zip.getinfo().comment` to retrieve comments of each text file in the ZIP.
 
 * **Level 7** [smarty](http://www.pythonchallenge.com/pc/def/oxygen.html)
 
