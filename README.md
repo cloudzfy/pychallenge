@@ -43,43 +43,43 @@ This is a solution for [Python Challenge](http://pythonchallenge.com), a puzzle 
 
   * The bee has link with username and password, which can be found in the HTML comment. Use `bz2` to decompress.
 
-* **Level 9** [connect dots](http://www.pythonchallenge.com/pc/return/good.html)
+* **Level 9** [connect dots](http://huge:file@www.pythonchallenge.com/pc/return/good.html)
 
   * To connect dots, you may check the HTML comments for the dots, and connect one by one.
   
   * Hint: Hmm, it's a male.
 
-* **Level 10** [what are you looking at?](http://www.pythonchallenge.com/pc/return/bull.html)
+* **Level 10** [what are you looking at?](http://huge:file@www.pythonchallenge.com/pc/return/bull.html)
 
   * Check the HTML comments for `len(a[30])`, you may find it is a count-and-say.
 
-* **Level 11** [odd even](http://www.pythonchallenge.com/pc/return/5808.html)
+* **Level 11** [odd even](http://huge:file@www.pythonchallenge.com/pc/return/5808.html)
 
   * The image provided could be sliced by odd and even. If you cannot find the clue, adjust the brightness of your screen.
 
-* **Level 12** [dealing evil](http://www.pythonchallenge.com/pc/return/evil.html)
+* **Level 12** [dealing evil](http://huge:file@www.pythonchallenge.com/pc/return/evil.html)
 
   * Clue is hided in the image. Since it is `evil1.jpg`, how about `evil2.jpg`, `evil3.jpg`, or even `evil4.jpg`. Not all the image file are image format. Do the file partition just like dealing with the cards.
   * Hint: Bert is evil! go back!
 
-* **Level 13** [call him](http://www.pythonchallenge.com/pc/return/disproportional.html)
+* **Level 13** [call him](http://huge:file@www.pythonchallenge.com/pc/return/disproportional.html)
 
   * You may find the number `5` is clickable. Use `xmlrpclib` to call him.
 
-* **Level 14** [walk around](http://www.pythonchallenge.com/pc/return/italy.html)
+* **Level 14** [walk around](http://huge:file@www.pythonchallenge.com/pc/return/italy.html)
 
   * Rearrange the image file just like the bread.
   * Hint: its name is uzi.
 
-* **Level 15** [uzi](http://www.pythonchallenge.com/pc/return/uzi.html)
+* **Level 15** [uzi](http://huge:file@www.pythonchallenge.com/pc/return/uzi.html)
 
   * Use `calendar.isleap` and `datetime.date`, you may find it easy to get the year. Then check the history.
 
-* **Level 16** [let me get this straight](http://www.pythonchallenge.com/pc/return/mozart.html)
+* **Level 16** [let me get this straight](http://huge:file@www.pythonchallenge.com/pc/return/mozart.html)
 
   * Get the image straight as the hint said. Use `a[1:]`.
 
-* **Level 17** [eat?](http://www.pythonchallenge.com/pc/return/romance.html)
+* **Level 17** [eat?](http://huge:file@www.pythonchallenge.com/pc/return/romance.html)
 
   * You may find the image at the corner fimiliar. Check the browser cookies for hint. Use `cookielib.CookieJar()` to retrieve cookie values.
   * Hint:
@@ -92,7 +92,7 @@ This is a solution for [Python Challenge](http://pythonchallenge.com), a puzzle 
   * Hint: no! i mean yes! but ../stuff/violin.php.
   * Use `cookielib.Cookie` to create cookie for request.
 
-* **Level 18** [can you tell the difference?](http://www.pythonchallenge.com/pc/return/balloons.html)
+* **Level 18** [can you tell the difference?](http://huge:file@www.pythonchallenge.com/pc/return/balloons.html)
 
   * First question is easy, `brightness` is the difference.
   * Check the comment, you may find the file `deltas.gz`, which is a text file, but needed to be compare using `difflib.Differ`. To convert the text back to hex, use `binascii.unhexlify`.
