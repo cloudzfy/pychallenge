@@ -45,13 +45,11 @@ This is a solution for [Python Challenge](http://pythonchallenge.com), a puzzle 
 
 * **Level 9** [connect dots](http://huge:file@www.pythonchallenge.com/pc/return/good.html)
 
-  * To connect dots, you may check the HTML comments for the dots, and connect one by one.
-  
-  * Hint: Hmm, it's a male.
+  * Connect the dots according to the coordinates of HTML comments, one by one.
 
 * **Level 10** [what are you looking at?](http://huge:file@www.pythonchallenge.com/pc/return/bull.html)
 
-  * Check the HTML comments for `len(a[30])`, you may find it is a count-and-say.
+  * Check the HTML comments for `len(a[30])`, it is a count-and-say.
 
 * **Level 11** [odd even](http://huge:file@www.pythonchallenge.com/pc/return/5808.html)
 
@@ -59,8 +57,7 @@ This is a solution for [Python Challenge](http://pythonchallenge.com), a puzzle 
 
 * **Level 12** [dealing evil](http://huge:file@www.pythonchallenge.com/pc/return/evil.html)
 
-  * Clue is hided in the image. Since it is `evil1.jpg`, how about `evil2.jpg`, `evil3.jpg`, or even `evil4.jpg`. Not all the image file are image format. Do the file partition just like dealing with the cards.
-  * Hint: Bert is evil! go back!
+  * Clue is hidden in the names of images. Since it is `evil1.jpg`, how about `evil2.jpg`, `evil3.jpg`, or even `evil4.jpg`. Not all the image file are image format. Do the file partition just like dealing with the cards.
 
 * **Level 13** [call him](http://huge:file@www.pythonchallenge.com/pc/return/disproportional.html)
 
@@ -68,12 +65,11 @@ This is a solution for [Python Challenge](http://pythonchallenge.com), a puzzle 
 
 * **Level 14** [walk around](http://huge:file@www.pythonchallenge.com/pc/return/italy.html)
 
-  * Rearrange the image file just like the bread.
-  * Hint: its name is uzi.
+  * Sort the image file just like the bread.
 
 * **Level 15** [uzi](http://huge:file@www.pythonchallenge.com/pc/return/uzi.html)
 
-  * Use `calendar.isleap` and `datetime.date`, you may find it easy to get the year. Then check the history.
+  * Use `calendar.isleap` and `datetime.date`, you may find it easy to get the year. Then check the history for Mozart and his father.
 
 * **Level 16** [let me get this straight](http://huge:file@www.pythonchallenge.com/pc/return/mozart.html)
 
@@ -81,19 +77,46 @@ This is a solution for [Python Challenge](http://pythonchallenge.com), a puzzle 
 
 * **Level 17** [eat?](http://huge:file@www.pythonchallenge.com/pc/return/romance.html)
 
-  * You may find the image at the corner fimiliar. Check the browser cookies for hint. Use `cookielib.CookieJar()` to retrieve cookie values.
-  * Hint:
-    * yummy! chocolate chips. 
-    * do you want to eat or to play?
-    * then go back and play.
-    * If you came here from level 4 - go back! You should follow the obvious chain... and the next busynothing is 44827
-  * Use `urllib.unquote_plus()` and `bz2` to unveil the code.
+  * You may find the image at the corner fimiliar. Check the browser cookies on Level 4, go through the linkedlist and gather the information hidden in the cookies.
   * Call Leopold using the phone.
-  * Hint: no! i mean yes! but ../stuff/violin.php.
-  * Use `cookielib.Cookie` to create cookie for request.
+  * Manually create the HTTP request with cookie `the+flowers+are+on+their+way`, Mozart's father will reply anyway.
 
 * **Level 18** [can you tell the difference?](http://huge:file@www.pythonchallenge.com/pc/return/balloons.html)
 
   * First question is easy, `brightness` is the difference.
-  * Check the comment, you may find the file `deltas.gz`, which is a text file, but needed to be compare using `difflib.Differ`. To convert the text back to hex, use `binascii.unhexlify`.
+  * Download the file `deltas.gz` and unzip, compare the differences between the two parts of the text file, use `unhexlify`, and get three images finally.
 
+* **Level 19** [please!](http://butter:fly@www.pythonchallenge.com/pc/hex/bin.html)
+
+  * Notice there is an email hidden in the HTML comments. By decoding the attachment, `indian.wav` was saying something about sorry.
+  *Notice there are some redundent information in the data of the WAVE file, by simply removing it and changing the framerate, we can get the clue `idiot`.
+
+* **Level 20** [go away!](http://butter:fly@www.pythonchallenge.com/pc/hex/idiot2.html)
+
+  * By inspecting the image file `unreal.jpg`, you may find the response header is highly suspicous.
+  * The `Range` field is unusual in the response headers, by adding and testing different number ranges of the field in an HTTP request, you will get a file talking about what you should do in the next level.
+
+* **Level 21** package.pack
+
+  * By checking the data inside the package, you may find it familiar. It is a file compress many times by ZLIB and BZ2 directly and reversely.
+  * The log is more important than the original file.
+
+* **Level 22** [emulate](http://butter:fly@www.pythonchallenge.com/pc/hex/copper.html)
+ 
+  * Download the GIF file `white.gif`, it is an animated GIF file, and there is a bright dot hidden inside. What we need to do is to figure out the trajectory of the dot's movement.
+
+* **Level 23** [what is this module?](http://butter:fly@www.pythonchallenge.com/pc/hex/bonus.html)
+
+  * This is actually a bonus level. Check `this` function in Python for more details.
+
+* **Level 24** [from top to bottom](http://butter:fly@www.pythonchallenge.com/pc/hex/ambiguity.html)
+
+  * Use Breath-First Search or Depth-First Search to check the path of the maze from top to bottom. BLACK color marks the entrance and exit, WHITE color marks the wall. The colors of the path are the data of a ZIP file.
+
+* **Level 25** [imagine how they sound](http://butter:fly@www.pythonchallenge.com/pc/hex/lake.html)
+
+  * Download the 25 WAVE files, which are almost noise by the way. Actually they are parts of the images, like a jigsaw.
+
+* **Level 26** [be a man - apologize!](http://butter:fly@www.pythonchallenge.com/pc/hex/decent.html)
+
+  * The title `apologize` reminds us about Mozart's father.
