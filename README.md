@@ -119,4 +119,47 @@ This is a solution for [Python Challenge](http://pythonchallenge.com), a puzzle 
 
 * **Level 26** [be a man - apologize!](http://butter:fly@www.pythonchallenge.com/pc/hex/decent.html)
 
-  * The title `apologize` reminds us about Mozart's father.
+  * The ZIP file `mybroken.zip` was modified, and must be corrected before unzip.
+  * The title "apologize" reminds us about Mozart's father. You may send an email to apologize, and will get the MD5 of the broken ZIP file.
+  
+* **Level 27** [between the tables](http://butter:fly@www.pythonchallenge.com/pc/hex/speedboat.html)
+
+  * Check the hint and download the GIF file `zigzag.gif`, extract the data from the GIF file, eliminate the redundant information, and convert the content by GIF palette, you may find the link, username, and password to the next level.
+
+* **Level 28** [many pairs ring-ring](http://repeat:switch@www.pythonchallenge.com/pc/ring/bell.html)
+
+  * Notice the picture shown has some patterns hidden behind, there are bars on it.
+  * Split the image and get the differences for each pair, you may find the message `whodunnit().split()[0] ?`
+
+* **Level 29** [silence!](http://repeat:switch@www.pythonchallenge.com/pc/ring/guido.html)
+
+  * Keep quiet and you may find the blanks hidden after the HTML code!
+  * Extract and convert to ASCII code, message will be revealed.
+
+* **Level 30** [relax you are on 30](http://repeat:switch@www.pythonchallenge.com/pc/ring/yankeedoodle.html)
+
+  * Download the CSV file `yankeedoodle.csv`. Unfortunately the CSV module in Python doesn't work well for this process, so you may do it on your own.
+  * The data can be converted to Image file by setting the mode to floating point pixels `F`. The image tells exactly how to decode this information, `n = str(x[i])[5] + str(x[i+1])[5] + str(x[i+2])[6]`.
+  * Decode the original data, and you may find the hint to the next level.
+
+* **Level 31** [where am I?](http://repeat:switch@www.pythonchallenge.com/pc/ring/grandpa.html)
+
+  * This is a puzzle based on knowledge, use Google Image search, you may find it is in Koh Samui, Thailand.
+  * Click the image with username `kohsamui` and password `thailand`, the new page shows an image of Mandelbrot set. Record the interations when computing the function in each pixel.
+  * The interations can be converted to an image with 8-bit pixels mode, which, is the Arecibo message.
+  * Amazing! Isn't it?
+
+* **Level 32** [etch-a-scetch](http://kohsamui:thailand@www.pythonchallenge.com/pc/rock/arecibo.html)
+
+  * This is about solving two nonogram. If you are not familiar with the concept and algorithms, just Google it.
+  * Finally you may get a picture with snake, which is python on it. Check [free speech](https://en.wikipedia.org/wiki/Gratis_versus_libre#.22Free_beer.22_vs_.22free_speech.22_distinction), which follows with `beer`.
+
+* **Level 33** [33 bottles of beer on the wall](http://kohsamui:thailand@www.pythonchallenge.com/pc/rock/beer.html)
+
+  * Download the image `beer2.png`, and carefully read this:
+  
+    > If you are blinded by the light, remove its power, with its might. Then from the ashes, fair and square, another truth at you will glare.
+
+  * Each time, if the pixels could fit into a square, check the brightest pixels and log the information. Then remove the brightest pixels and go to the next round.
+
+* **Level 34** [Temporary End](http://kohsamui:thailand@www.pythonchallenge.com/pc/rock/gremlins.html)
