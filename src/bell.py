@@ -4,6 +4,7 @@ import Image
 
 src = urllib.urlopen('http://repeat:switch@www.pythonchallenge.com/pc/ring/bell.png').read()
 im = Image.open(StringIO.StringIO(src))
+im.load()
 
 ret = list(im.split()[1].getdata())
 diff = [abs(x - y) for x, y in zip(ret[0::2], ret[1::2])]

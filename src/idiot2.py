@@ -47,4 +47,4 @@ src = res.read()
 file = open('package.pack', 'w')
 file.write(zipfile.ZipFile(StringIO.StringIO(src)).read('package.pack', pwd=pwd))
 file.close()
-print package.pack
+print 'package.pack'

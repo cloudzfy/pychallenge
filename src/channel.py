@@ -1,6 +1,7 @@
 import urllib
 import zipfile
 import StringIO
+import re
 
 src = urllib.urlopen('http://www.pythonchallenge.com/pc/def/channel.zip').read()
 zip = zipfile.ZipFile(StringIO.StringIO(src))
