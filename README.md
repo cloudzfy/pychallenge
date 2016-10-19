@@ -96,7 +96,7 @@ This is a solution for [Python Challenge](http://pythonchallenge.com), a puzzle 
   * By inspecting the image file `unreal.jpg`, you may find the response header is highly suspicous.
   * The `Range` field is unusual in the response headers, by adding and testing different number ranges of the field in an HTTP request, you will get a file talking about what you should do in the next level.
 
-* **Level 21** package.pack
+* **Level 21** `package.pack`
 
   * By checking the data inside the package, you may find it familiar. It is a file compress many times by ZLIB and BZ2 directly and reversely.
   * The log is more important than the original file.
